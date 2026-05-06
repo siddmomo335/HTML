@@ -1,0 +1,86 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  min-height: 100%;
+}
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: linear-gradient(180deg, #01121f 0%, #132d44 45%, #0f1d37 100%);
+  color: #edf2ff;
+}
+main {
+  min-height: 100vh;
+  padding: 2rem 1.5rem;
+  display: grid;
+  gap: 2rem;
+  align-items: start;
+}
+header {
+  text-align: center;
+}
+h1 {
+  margin: 0;
+  font-size: clamp(2rem, 4vw, 3rem);
+}
+p {
+  margin: 0.5rem auto 0;
+  max-width: 44rem;
+  color: #cfd9ff;
+}
+.soundboard {
+  display: grid;
+  place-items: center;
+}
+.sample-grid {
+  width: min(100%, 1100px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.sample-card {
+  display: grid;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 26px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+.sample-button {
+  border: none;
+  width: 100%;
+  padding: 1.2rem 1rem;
+  border-radius: 18px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  background: #152a49;
+  color: #f8f9ff;
+  cursor: pointer;
+  transition: background 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.sample-button:hover,
+.sample-card:hover .sample-button {
+  background: #f8ca3f;
+  color: #081017;
+  transform: translateY(-4px);
+}
+.sample-title {
+  font-size: 0.95rem;
+  letter-spacing: 0.03em;
+}
+.sample-meta {
+  margin: 0;
+  color: #94a7c1;
+  font-size: 0.92rem;
+}
+footer {
+  text-align: center;
+  color: #9db2db;
+}
+@media (max-width: 640px) {
+  main {
+    padding: 1.2rem;
+  }
+}

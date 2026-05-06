@@ -1,0 +1,161 @@
+/* Base page styling for body and typography */
+body {
+  margin: 0;
+  padding: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f4f2ef 0%, #e8dcc0 50%, #f5deb3 100%);
+  color: #333333;
+  line-height: 1.6;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Center content and limit width for readability */
+body > header,
+body > section,
+footer {
+  max-width: 900px;
+  margin: 0 auto 24px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+body > header:hover,
+body > section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the main recipe title */
+h1 {
+  font-size: 3rem;
+  margin-bottom: 8px;
+  color: #8b4513;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Section headings stand out with clear spacing */
+h2,
+h3 {
+  color: #d2691e;
+  margin-top: 32px;
+  margin-bottom: 12px;
+  border-bottom: 3px solid #daa520;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Paragraph formatting for readability */
+p {
+  margin: 0 0 16px;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+}
+
+/* List styling for ingredients and methods */
+ul,
+ol {
+  padding-left: 24px;
+  margin-top: 0;
+  background: linear-gradient(90deg, #fff8dc 0%, #f0e68c 100%);
+  padding: 20px;
+  border-radius: 10px;
+  border-left: 6px solid #daa520;
+  box-shadow: inset 0 0 10px rgba(218, 165, 32, 0.2);
+}
+
+li {
+  margin-bottom: 12px;
+  color: #333;
+  padding: 5px 0;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+li:hover {
+  color: #8b4513;
+  transform: translateX(5px);
+}
+
+/* Image styling */
+.recipe-image {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  border: 4px solid #daa520;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.recipe-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  body > header,
+  body > section,
+  footer {
+    padding: 15px;
+  }
+}
+
+/* Highlight code examples with a light background */
+pre {
+  background-color: #272822;
+  color: #f8f8f2;
+  padding: 16px;
+  border-radius: 10px;
+  overflow: auto;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #e8e7e3;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+/* Article boxes create a clean visual hierarchy */
+article {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(80, 66, 154, 0.08);
+  margin-bottom: 24px;
+}
+
+/* Footer styling */
+footer {
+  border-top: 1px solid #d5d1cc;
+  padding-top: 14px;
+  color: #5e5a66;
+  text-align: center;
+}
+
+/* Strong tag emphasis color for inline highlights */
+strong {
+  color: #3f2f7a;
+}

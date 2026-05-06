@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#11366e"/>
+      <stop offset="100%" stop-color="#0c1f4c"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <text x="50%" y="45%" text-anchor="middle" fill="#f7f7ff" font-family="Segoe UI, sans-serif" font-size="72" font-weight="700">Local Video Sample</text>
+  <text x="50%" y="56%" text-anchor="middle" fill="#d4e0ff" font-family="Segoe UI, sans-serif" font-size="32">Tap play to watch the embedded video</text>
+</svg>

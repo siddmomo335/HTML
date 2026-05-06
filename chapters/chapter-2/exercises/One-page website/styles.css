@@ -1,0 +1,137 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #1f2937;
+  background: radial-gradient(circle at top center, #e0f2fe 0%, #f7f7f7 45%, #f3f4f6 100%);
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #0f172a;
+}
+
+header h1 {
+  font-size: 2.6rem;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+
+header p {
+  color: #475569;
+  font-size: 1rem;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+.hero-image img {
+  width: min(100%, 320px);
+  height: auto;
+  border-radius: 24px;
+  border: 1px solid rgba(59, 130, 246, 0.24);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.12);
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: rgba(59, 130, 246, 0.12);
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  background: #2563eb;
+  color: #ffffff;
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 840px;
+  margin: 0 auto;
+  background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+  border-radius: 20px;
+  padding: 32px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.12);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+h1, h2 {
+  margin-top: 0;
+}
+
+h2 {
+  color: #1d4ed8;
+  border-bottom: 2px solid #bfdbfe;
+  display: inline-block;
+  padding-bottom: 4px;
+}
+
+section {
+  margin-bottom: 28px;
+}
+
+section:nth-child(odd) {
+  background: rgba(59, 130, 246, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+section:nth-child(even) {
+  background: rgba(16, 185, 129, 0.05);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+ul {
+  padding-left: 22px;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+strong {
+  color: #111827;
+}
+
+footer {
+  text-align: center;
+  margin-top: 24px;
+  color: #475569;
+}
+
+@media (max-width: 640px) {
+  body {
+    padding: 14px;
+  }
+
+  main {
+    padding: 22px;
+  }
+
+  nav {
+    gap: 12px;
+  }
+}

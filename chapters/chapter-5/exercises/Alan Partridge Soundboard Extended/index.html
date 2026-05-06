@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alan Partridge Soundboard Extended</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Alan Partridge Soundboard Extended</h1>
+      <p>Includes text-to-speech, sample pagination, and dynamic sample durations.</p>
+    </header>
+
+    <section class="video-section">
+      <h2>Embedded Local Video</h2>
+      <video controls loop poster="poster.svg">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+    </section>
+
+    <section class="app-shell">
+      <section class="soundboard-panel">
+        <div class="pager">
+          <button id="prevButton" type="button" aria-label="Previous page">←</button>
+          <span id="pageIndicator">Page 1</span>
+          <button id="nextButton" type="button" aria-label="Next page">→</button>
+        </div>
+        <div id="sampleList" class="sample-grid" aria-live="polite"></div>
+      </section>
+
+      <aside class="tts-panel">
+        <h2>Text to Speech</h2>
+        <p>Type any text and press <strong>Speak</strong> to hear it immediately.</p>
+        <label for="ttsText">Enter text</label>
+        <textarea id="ttsText" rows="8" placeholder="Type a phrase here..."></textarea>
+        <button id="speakButton" type="button">Speak</button>
+        <p id="ttsStatus" class="status">Ready to speak.</p>
+        <div class="voice-picker">
+          <label for="voiceSelect">Voice</label>
+          <select id="voiceSelect"></select>
+        </div>
+      </aside>
+    </section>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

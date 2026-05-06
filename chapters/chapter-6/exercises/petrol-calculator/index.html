@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!-- Petrol Calculator HTML file -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Title of the page -->
+    <title>Petrol Calculator</title>
+    <!-- Link to the CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the calculator -->
+    <div class="container">
+        <h1>Petrol Calculator</h1>
+        <!-- Input for cost per liter -->
+        <label for="cost">Cost per liter (£):</label>
+        <input type="number" id="cost" value="1.72" step="0.01">
+        <!-- Input for number of liters -->
+        <label for="liters">Number of liters:</label>
+        <input type="number" id="liters" value="0" step="0.01">
+        <!-- Button to calculate total -->
+        <button id="calculate">Calculate Total</button>
+        <!-- Paragraph to display the result -->
+        <p id="result">Total cost: £0.00</p>
+    </div>
+    <!-- Link to the JavaScript file -->
+    <script src="index.js"></script>
+</body>
+</html>
